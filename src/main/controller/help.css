@@ -1,0 +1,6 @@
+.label {
+    -fx-font-size: 12;
+    -fx-wrap-text: true;
+    -fx-padding: 10;
+    -fx-column-halignment: LEFT;
+}

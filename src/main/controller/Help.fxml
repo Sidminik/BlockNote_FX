@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            prefHeight="580.0" prefWidth="630.0"
+            stylesheets="@help.css">
+    <GridPane >
+        <columnConstraints>
+            <ColumnConstraints minWidth="110" prefWidth="110"
+                               maxWidth="Infinity" halignment="RIGHT">
+            </ColumnConstraints>
+            <ColumnConstraints minWidth="80" prefWidth="80"
+                               maxWidth="Infinity" hgrow="ALWAYS">
+            </ColumnConstraints>
+            <ColumnConstraints minWidth="40" prefWidth="40"
+                               maxWidth="Infinity" halignment="RIGHT">
+            </ColumnConstraints>
+            <ColumnConstraints minWidth="375" prefWidth="375"
+                               maxWidth="Infinity" hgrow="ALWAYS">
+            </ColumnConstraints>
+        </columnConstraints>
+
+        <Label text="Файл" GridPane.rowIndex="0" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT"
+               style="-fx-font-weight: bold">
+        </Label>
+        <Label text="вкладка меню, позволяющая создать, открыть, сохранить и закрыть файлы"
+               GridPane.rowIndex="0" GridPane.columnIndex="1"
+               GridPane.columnSpan="3"
+               style="-fx-font-weight: bold">
+        </Label>
+
+        <Label text="Создать" GridPane.rowIndex="1" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + N" GridPane.rowIndex="1" GridPane.columnIndex="1">
+        </Label>
+        <ImageView GridPane.rowIndex="1" GridPane.columnIndex="2"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/create.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="создать новый файл" GridPane.rowIndex="1" GridPane.columnIndex="3">
+        </Label>
+
+        <Label text="Открыть" GridPane.rowIndex="2" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + O" GridPane.rowIndex="2" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="2" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/open.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="открыть имеющийся файл" GridPane.rowIndex="2" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+
+        <Label text="Сохранить" GridPane.rowIndex="3" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + S" GridPane.rowIndex="3" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="3" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/save.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="сохранить новый или открытый ранее файл" GridPane.rowIndex="3" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+
+        <Label text="Закрыть" GridPane.rowIndex="4" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + W" GridPane.rowIndex="4" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="4" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/close.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="закрыть вкладку текущего файла" GridPane.rowIndex="4" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+
+        <Label text="Выход" GridPane.rowIndex="5" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="ALT + F4" GridPane.rowIndex="5" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="5" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+
+        </ImageView>
+        <Label text="выход из приложения" GridPane.rowIndex="5" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+
+        <Label text="Поиск" GridPane.rowIndex="6" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT"
+               style="-fx-font-weight: bold">
+        </Label>
+        <Label text="вкладка меню, позволяющая найти или заменить часть текста"
+               GridPane.rowIndex="6" GridPane.columnIndex="1"
+               GridPane.columnSpan="3"
+               style="-fx-font-weight: bold">
+        </Label>
+
+        <Label text="Найти..." GridPane.rowIndex="7" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + F" GridPane.rowIndex="7" GridPane.columnIndex="1">
+        </Label>
+        <ImageView GridPane.rowIndex="7" GridPane.columnIndex="2"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/search.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="найти символ, слово или выражение" GridPane.rowIndex="7" GridPane.columnIndex="3">
+        </Label>
+
+        <Label text="Заменить..." GridPane.rowIndex="8" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="CTRL + J" GridPane.rowIndex="8" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="8" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/change.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="заменить символ, слово или выражение" GridPane.rowIndex="8" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+
+        <Label text="Вид" GridPane.rowIndex="9" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT"
+               style="-fx-font-weight: bold">
+        </Label>
+        <Label text="вкладка меню, позволяющая изменить отображение панели кнопок и строки состояния"
+               GridPane.rowIndex="9" GridPane.columnIndex="1"
+               GridPane.columnSpan="3"
+               style="-fx-font-weight: bold">
+        </Label>
+
+        <Label text="Панель кнопок" GridPane.rowIndex="10" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label GridPane.rowIndex="10" GridPane.columnIndex="1">
+        </Label>
+        <ImageView GridPane.rowIndex="10" GridPane.columnIndex="2"
+                   GridPane.halignment="CENTER">
+        </ImageView>
+        <Label text="вкл/выкл режима отображения панели кнопок" GridPane.rowIndex="10" GridPane.columnIndex="3">
+        </Label>
+
+        <Label text="О программе" GridPane.rowIndex="12" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT"
+               style="-fx-font-weight: bold">
+        </Label>
+        <Label text="вкладка меню, позволяющая получить дополнительную информацию о работе программы и разработчике"
+               GridPane.rowIndex="12" GridPane.columnIndex="1"
+               GridPane.columnSpan="3"
+               style="-fx-font-weight: bold">
+        </Label>
+
+        <Label text="Справка" GridPane.rowIndex="13" GridPane.columnIndex="0"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label text="F1" GridPane.rowIndex="13" GridPane.columnIndex="1">
+        </Label>
+        <ImageView GridPane.rowIndex="13" GridPane.columnIndex="2"
+                   GridPane.halignment="CENTER">
+            <Image
+                    url="/main/view/img/help.png"
+                    backgroundLoading="true"
+            />
+        </ImageView>
+        <Label text="справочная информация об органах управления программой" GridPane.rowIndex="13" GridPane.columnIndex="3">
+        </Label>
+
+        <Label text="О разработчике" GridPane.rowIndex="14" GridPane.columnIndex="0"
+               GridPane.rowSpan="1" GridPane.columnSpan="1"
+               GridPane.halignment="LEFT">
+        </Label>
+        <Label GridPane.rowIndex="14" GridPane.columnIndex="1"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+        <ImageView GridPane.rowIndex="14" GridPane.columnIndex="2"
+                   GridPane.rowSpan="1" GridPane.columnSpan="1"
+                   GridPane.halignment="CENTER">
+        </ImageView>
+        <Label text="краткая информация о разработчике" GridPane.rowIndex="14" GridPane.columnIndex="3"
+               GridPane.rowSpan="1" GridPane.columnSpan="1">
+        </Label>
+    </GridPane>
+</ScrollPane>
