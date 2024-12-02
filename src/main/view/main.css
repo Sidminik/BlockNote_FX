@@ -1,0 +1,36 @@
+TabPane {
+    -fx-background-color: lightgray;
+}
+
+.button {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#createButton {
+    -fx-background-image: url('/main/view/img/create.png');
+}
+
+#openButton {
+    -fx-background-image: url('/main/view/img/open.png');
+}
+
+#saveButton {
+    -fx-background-image: url('/main/view/img/save.png');
+}
+
+#closeButton {
+    -fx-background-image: url('/main/view/img/close.png');
+}
+
+#searchButton {
+    -fx-background-image: url('/main/view/img/search.png');
+}
+
+#changeButton {
+    -fx-background-image: url('/main/view/img/change.png');
+}
+
+#helpButton {
+    -fx-background-image: url('/main/view/img/help.png');
+}
